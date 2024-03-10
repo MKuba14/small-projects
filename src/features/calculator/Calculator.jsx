@@ -132,7 +132,7 @@ function handleOperation({ currentNumber, previousNumber, operation }) {
       result = prev / curr;
       break;
     default:
-      console.log("elo");
+      throw new Error("Unknown operation");
   }
   return result.toString();
 }
